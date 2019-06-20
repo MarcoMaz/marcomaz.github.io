@@ -5,6 +5,8 @@ body {
 	flex-wrap: wrap;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 16px;
+	margin: 0;
+	overflow-x: hidden;
 	}
 
 /******Styles in Common******/
@@ -54,3 +56,99 @@ nav ul li a{
 nav ul li a:hover {
 	text-decoration: underline;
 	}
+
+/******************/
+/* About **********/
+/******************/
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+main section {
+	border: 5px dashed black;	
+	margin-top: 30px;
+	width: 80%;
+}
+
+main section h1 {
+	background-color: #fff;
+	display: inline;
+	padding: 0 15px;
+	position: relative;
+	text-transform: uppercase;
+	top: -15px;
+}
+
+main section p {
+	padding: 10px 40px;
+}
+
+/******************/
+/* Projects *******/
+/******************/
+
+
+
+
+/******************/
+/* Skills *********/
+/******************/
+
+main section p span {
+	border: 1px solid black;
+	display: inline-block;
+	margin: 5px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+main section p .skills-good {
+	font-size: 3em;
+}
+
+main section p .skills-average {
+	font-size: 2em;
+}
+
+main section p .skills-basic {
+	font-size: 1em;
+}
+
+main section p .skills-good:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+}
+
+main section p .skills-average:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+
+main section p .skills-basic:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+}
+
+/******************/
+/* Footer *********/
+/******************/
+
+footer {
+	background-color: #000;
+	color: #fff;
+	margin-top: 20px;
+	padding: 50px 0;
+}
+
+footer p a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer p a:hover {
+	text-decoration: underline;
+}
