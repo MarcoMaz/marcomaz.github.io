@@ -10,39 +10,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header>
-		<h1>Marco Mazzai</h1>
+  <header>
+    <h1>Marco Mazzai</h1>
     <h2>Frontend Developer based in Berlin</h2>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-		    <li><a href="#">About</a></li>
-		    <li><a href="#">Projects</a></li>
-		    <li><a href="#">Skills</a></li>      
-		    <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Skills</a></li>      
+        <li><a href="#">Contact</a></li>
       </ul>
-		</nav>
-	</header>
+    </nav>
+  </header>
 
 <main>
-  <section>
+  <section id="about">
     <h1>About</h1>
-    <p>I got interested in web developing when I did my first website using Wordpress in 2012.<br/><br/>
-      After that, I started to follow the curriculum of Free Code Camp. <br/>
-      Meanwhile, in 2017 I found a position as a Web Designer in the agency I'm still working. We do micro-sites using html5 and css3.<br/><br/>
+    <p>I got interested in web developing when I did my first website using <span>Wordpress</span> in 2012.<br/><br/>
+      After that, I started to follow the curriculum of <span>Free Code Camp</span>. <br/>
+      Meanwhile, in 2017 I found a position as a Web Designer in the agency I'm still working. We do micro-sites using <span>html5</span> and <span>css3</span>.<br/><br/>
       Whenever I got the time I followed up with my studies. <br/>
-    At the moment I'm studying more React + Redux and D3.
+    At the moment I'm studying more <span>React</span> + <span>Redux</span> and <span>D3</span>.
   </p>
   </section>
 
-<!--
-  <section>
+  <section id="projects">
     <h1>Projects</h1>
-    <p></p>
-  </section>
--->
+    <div id="image-container">
+      <a  
+        href="" 
+        class="image-project">
+        <img src="images/pomodoro.png">
+        <span>Pomodoro Clock</span> 
+      </a>
+       <a  
+        href="" 
+        class="image-project">
+        <img src="images/pomodoro.png">
+        <span>Pomodoro Clock</span> 
+      </a>
+      <a 
+        href=""
+        id="show-link">SHOW ALL</a>
+    </div>
 
-  <section>
+
+
+  </section>
+
+  <section id="skills">
     <h1>Skills</h1>
     <p>
       <span class="skills-good">Html5</span>
@@ -63,13 +80,13 @@
   </section>  
 </main>
 <footer>
-  <h1>Contact</h1>
-  <p>
-    <a href="mailto:marco.mazzai@gmail.com?subject=Website">Email</a> | 
-    <a href="https://github.com/MarcoMaz">
-    Github
-    </a>
-  </p>
+  <section>
+    <h1>Contact</h1>
+    <p>
+      <a href="mailto:marco.mazzai@gmail.com?subject=Website">Email</a> | 
+      <a href="https://github.com/MarcoMaz">Github</a>
+    </p>
+    </section>
 </footer>
 
 

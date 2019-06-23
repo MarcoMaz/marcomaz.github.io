@@ -1,154 +1,222 @@
 body {
-	background-color: #fff;
-	color: #000;
-	display: flex;
-	flex-wrap: wrap;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 16px;
-	margin: 0;
-	overflow-x: hidden;
-	}
+  background-color: #fff;
+  color: #010101;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+}
 
-/******Styles in Common******/
-
+/****************************/
+/* STYLES IN COMMON *********/
+/****************************/
 header, main, footer {
-	text-align: center;
-	width: 100%;
-	}
+  text-align: center;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+main section {
+  width: 100%;
+}
+main section h1 {
+  border-radius: 5px;
+  display: inline;
+  padding: 0 25px;
+  position: relative;
+  text-transform: uppercase;
+  top: -20px;
+}
+main section p {
+  padding: 50px 50px 80px 50px;
+}
 
 /******************/
 /* Header *********/
 /******************/
-
-header h1, h2 {
-	font-family: 'Playfair Display', serif;
-	}
-
 header h1 {
-	font-size: 4em;
-	}
-
+  font-family: 'Playfair Display', serif;
+  font-size: 4em;
+}
 header h2 {
-	font-size: 1em;
-	position: relative;
-	text-transform: uppercase;
-	top: -40px;
-	}
-
-/******************/
-/* Navigation *********/
-/******************/
-
-nav ul {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	padding: 0.5em 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  position: relative;
+  text-transform: uppercase;
+  top: -40px;
 }
 
-nav ul li a{
-	color: #000;
-	padding: 2em 1em;	
-	text-decoration: none;
-	text-transform: uppercase;
-	}
-
-nav ul li a:hover {
-	text-decoration: underline;
-	}
+/******************/
+/* Navigation *****/
+/******************/
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 100px;
+  padding: 0.5em 0;
+}
+nav ul a {
+  color: #797979;
+  padding: 2em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul a:hover {
+  color: #bcbcbc;
+  text-decoration: underline;
+}
 
 /******************/
 /* About **********/
 /******************/
-
-main {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 100%;
+#about {
+  background-color: #4db0ca;
+  color: #fff;
 }
-
-main section {
-	border: 5px dashed black;	
-	margin-top: 30px;
-	width: 80%;
+#about h1 {
+  background-color: #4db0ca;
 }
-
-main section h1 {
-	background-color: #fff;
-	display: inline;
-	padding: 0 15px;
-	position: relative;
-	text-transform: uppercase;
-	top: -15px;
-}
-
-main section p {
-	padding: 10px 40px;
+#about span {
+  color: #1d4377;
+  padding: 0 2px;
 }
 
 /******************/
 /* Projects *******/
 /******************/
+#projects {
+  background-color: #d7a350;
+  color: #1d4377;
+}
+#projects h1 {
+  background-color: #d7a350;
+}
 
+#image-container {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 10em;
+}
 
+#image-container .image-project {
+	margin: 3em 0;
+}
 
+#image-container .image-project, img {
+	text-decoration: none;
+	width: 80%;
+}
+
+#image-container .image-project:hover {
+	text-decoration: underline;
+}
+
+#image-container #show-link {
+	background-color: #1d4377;
+	color: #d7a350;
+	display: inline;
+	padding: 20px 0;
+	text-decoration: none;
+	width: 30%;
+}
+
+#image-container #show-link:hover {
+	border: 1px solid #fff;
+	color: #fff;
+}
 
 /******************/
 /* Skills *********/
 /******************/
+#skills {
+  background-color: #bcbcbc;
+  color: #010101;
+}
+#skills h1 {
+  background-color: #bcbcbc;
+}
 
 main section p span {
-	border: 1px solid black;
-	display: inline-block;
-	margin: 5px;
-	padding: 10px;
-	text-transform: uppercase;
+  border: 1px solid #010101;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  text-transform: uppercase;
 }
-
 main section p .skills-good {
-	font-size: 3em;
+  font-size: 3em;
 }
-
-main section p .skills-average {
-	font-size: 2em;
-}
-
-main section p .skills-basic {
-	font-size: 1em;
-}
-
 main section p .skills-good:hover {
-	background-color: rgba(0, 0, 0, 0.8);
-	color: #fff;
+  background-color: #797979;
+  color: #fff;
 }
-
+main section p .skills-average {
+  font-size: 2em;
+}
 main section p .skills-average:hover {
-	background-color: rgba(0, 0, 0, 0.5);
-	color: #fff;
+  background-color: #1d4377;
+  color: #fff;
 }
-
+main section p .skills-basic {
+  font-size: 1em;
+}
 main section p .skills-basic:hover {
-	background-color: rgba(0, 0, 0, 0.2);
-	color: #fff;
+  background-color: #d7a350;
+  color: #fff;
 }
 
 /******************/
 /* Footer *********/
 /******************/
-
 footer {
-	background-color: #000;
-	color: #fff;
-	margin-top: 20px;
+  background-color: #010101;
+  color: #bcbcbc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+footer h1 {
+  background-color: #010101;
+  border-radius: 5px;
+  display: inline;
+  padding: 0 25px;
+  position: relative;
+  text-transform: uppercase;
+  top: -20px;
+}
+
+footer p {
 	padding: 50px 0;
 }
 
 footer p a {
-	color: #fff;
-	text-decoration: none;
+  color: #bcbcbc;
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
 }
 
-footer p a:hover {
-	text-decoration: underline;
-}
+
+/*********************/
+/* TO DO
+
+- Button Colors ok?
+- Fix hover image
+- Do other images
+- Aside make sense?
+- Responsive?
+- Webkit?
+
+*/
