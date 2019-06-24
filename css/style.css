@@ -54,27 +54,6 @@ header h2 {
 }
 
 /******************/
-/* Navigation *****/
-/******************/
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 100px;
-  padding: 0.5em 0;
-}
-nav ul a {
-  color: #797979;
-  padding: 2em 1em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-nav ul a:hover {
-  color: #bcbcbc;
-  text-decoration: underline;
-}
-
-/******************/
 /* About **********/
 /******************/
 #about {
@@ -105,34 +84,51 @@ nav ul a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-bottom: 10em;
+	
 }
 
 #image-container .image-project {
 	margin: 3em 0;
-}
-
-#image-container .image-project, img {
-	text-decoration: none;
 	width: 80%;
 }
 
-#image-container .image-project:hover {
+#image-container img {
+	width: 80%;
+}
+
+#image-container div {
+	display: block;
+	width: 100%;
+}
+
+#image-container div span {
+	border: 1px solid #1d4377;
+	display: inline-block;
+
+}
+
+#image-container a {
+	text-decoration: none;
+}
+
+#image-container a:hover {
 	text-decoration: underline;
 }
 
-#image-container #show-link {
+#projects #show-link {
 	background-color: #1d4377;
 	color: #d7a350;
-	display: inline;
+	display: inline-block;
+	margin: 50px 0 150px;
 	padding: 20px 0;
 	text-decoration: none;
 	width: 30%;
 }
 
-#image-container #show-link:hover {
+#projects #show-link:hover {
 	border: 1px solid #fff;
 	color: #fff;
+	margin-bottom: 148px;
 }
 
 /******************/
@@ -209,14 +205,40 @@ footer p a:hover {
 }
 
 
+
+@media only screen and (min-width: 650px) and (max-width: 950px){
+	#image-container .image-project {
+		width: 50%;
+	}
+
+	#image-container img {
+		width: 65%;
+	}
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1500px){
+	#image-container .image-project {
+		width: 30%;
+	}
+
+	#image-container img {
+		opacity: 1;
+		width: 80%;
+	}
+
+	#image-container img:hover {
+		opacity: 0.3;
+		transition: opacity .2s ease-out;
+	}
+}
+
+
 /*********************/
 /* TO DO
 
-- Button Colors ok?
-- Fix hover image
-- Do other images
-- Aside make sense?
-- Responsive?
-- Webkit?
+3. Check Sizes
+4. Cancel extra code
+5. Webkit?
+6. Validate Code
 
 */
