@@ -97,9 +97,9 @@ header h2 {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  height: 14em;
   justify-content: center;
   margin: 3em 0;
-  width: 80%;
 }
 #projects-container .image-project a {
   color: #bcbcbc;
